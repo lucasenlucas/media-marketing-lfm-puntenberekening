@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Punten Berekening - Afdeling M&M League FM</title>
+    <title>Offline</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #ffffff;
+            background-color: #f4f4f4;
             color: #333;
             margin: 0;
             padding: 0;
@@ -20,105 +20,36 @@
         }
 
         .container {
-            width: 100%;
-            max-width: 500px;
-            padding: 30px;
-            background-color: #f4f7fa;
-            border-radius: 8px;
+            padding: 20px 40px;
+            background-color: white;
+            border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
         }
 
         h1 {
             font-size: 2.5rem;
-            color: #333;
-            margin-bottom: 20px;
+            color: #a00c0c;
+            margin-bottom: 10px;
             font-weight: bold;
         }
 
-        p, label {
+        p {
             font-size: 1.2rem;
             color: #555;
-            margin: 10px 0;
-        }
-
-        input {
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1rem;
-            width: 100%;
-            margin-bottom: 20px;
-            box-sizing: border-box;
-        }
-
-        button {
-            padding: 12px 25px;
-            background-color: #a00c0c;
-            color: white;
-            font-size: 1.2rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            width: 100%;
-        }
-
-        button:hover {
-            background-color: #820909;
-        }
-
-        #resultaat {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #a00c0c;
-            margin-top: 20px;
-        }
-
-        .footer-bar {
-            display: inline-block;
-            background-color: #a00c0c;
-            color: white;
-            padding: 8px 20px;
-            font-size: 0.9rem;
-            font-weight: bold;
-            border-radius: 10px;
-            margin-top: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .credits {
-            margin-top: 10px;
-            font-size: 0.8rem;
+            margin-top: 20px;
+            font-size: 0.9rem;
             color: #777;
         }
     </style>
-    <script>
-        function berekenPunten() {
-            const waarde = parseFloat(document.getElementById("waarde").value);
-            let punten;
-
-            if (waarde <= 20) {
-                punten = waarde; 
-            } else {
-                punten = (waarde - 20) * 2 + 20; 
-            }
-
-            document.getElementById("resultaat").innerText = "Punten: " + punten;
-        }
-    </script>
 </head>
 <body>
     <div class="container">
-        <h1>Punten Berekening</h1>
-        <p>Vul hier het behaalde aantal servers in:</p>
-        <label for="waarde">Aantal benaderde Discord-servers:</label>
-        <input type="number" id="waarde" />
-        <button onclick="berekenPunten()">Reken uit!</button>
-        <p id="resultaat"></p>
+        <h1>Sorry, we zijn offline</h1>
+        <p>Deze pagina is momenteel niet beschikbaar.</p>
+        <p class="credits">Credits: Lucas M & koen</p>
     </div>
-    <div class="footer-bar">
-        League-FM Media & Marketing
-    </div>
-    <p class="credits">Credits: Lucas M & Koen</p>
 </body>
 </html>
